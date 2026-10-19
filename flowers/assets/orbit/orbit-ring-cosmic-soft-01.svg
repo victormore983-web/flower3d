@@ -1,0 +1,95 @@
+<svg width="900" height="480" viewBox="0 0 900 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <defs>
+    <style>
+      :root {
+        --orbit-champagne: #D9C5A3;
+        --orbit-blush: #D9A8AE;
+        --orbit-lavender: #C8B8D9;
+        --orbit-ivory: #FFF8EA;
+      }
+      .orbit-glow-soft {
+        stroke: var(--orbit-lavender);
+        stroke-opacity: 0.18;
+      }
+      .orbit-glow-warm {
+        stroke: var(--orbit-blush);
+        stroke-opacity: 0.16;
+      }
+      .orbit-main {
+        stroke: url(#orbitStrokeGradient);
+        stroke-opacity: 0.64;
+      }
+      .orbit-highlight {
+        stroke: var(--orbit-ivory);
+        stroke-opacity: 0.48;
+      }
+      .orbit-accent {
+        stroke: var(--orbit-blush);
+        stroke-opacity: 0.34;
+      }
+    </style>
+
+    <linearGradient id="orbitStrokeGradient" x1="117" y1="134" x2="783" y2="346" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="var(--orbit-ivory)" stop-opacity="0.36"/>
+      <stop offset="0.28" stop-color="var(--orbit-champagne)" stop-opacity="0.58"/>
+      <stop offset="0.52" stop-color="var(--orbit-blush)" stop-opacity="0.42"/>
+      <stop offset="0.75" stop-color="var(--orbit-lavender)" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="var(--orbit-champagne)" stop-opacity="0.50"/>
+    </linearGradient>
+
+    <filter id="softOrbitBlur" x="90" y="110" width="720" height="260" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <filter id="microGlow" x="110" y="125" width="680" height="230" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="1.15"/>
+    </filter>
+  </defs>
+
+  <ellipse
+    class="orbit-glow-soft"
+    cx="450"
+    cy="240"
+    rx="332"
+    ry="105"
+    stroke-width="7"
+    filter="url(#softOrbitBlur)"
+  />
+
+  <ellipse
+    class="orbit-glow-warm"
+    cx="450"
+    cy="240"
+    rx="330"
+    ry="103"
+    stroke-width="4"
+    filter="url(#microGlow)"
+  />
+
+  <ellipse
+    class="orbit-main"
+    cx="450"
+    cy="240"
+    rx="328"
+    ry="102"
+    stroke-width="1.25"
+    vector-effect="non-scaling-stroke"
+  />
+
+  <path
+    class="orbit-highlight"
+    d="M 189 184 C 253 139 356 122 467 139"
+    stroke-width="1"
+    stroke-linecap="round"
+    vector-effect="non-scaling-stroke"
+  />
+
+  <path
+    class="orbit-accent"
+    d="M 578 326 C 649 315 708 286 755 244"
+    stroke-width="1"
+    stroke-linecap="round"
+    stroke-dasharray="5 9"
+    vector-effect="non-scaling-stroke"
+  />
+</svg>
