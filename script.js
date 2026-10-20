@@ -197,7 +197,7 @@ const LOCAL_PHOTO_FALLBACKS = [
     './photos/_ (9).jpeg',
     './photos/_ (10).jpeg',
     './photos/new.jpeg',
-    './photos/nêww.jpeg',
+    './photos/nêww.jpeg',
     "./photos/pain'.jpeg"
 ];
 
